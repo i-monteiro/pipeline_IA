@@ -1,0 +1,4 @@
+# Documentação
+
+::: contrato.Vendas
+
