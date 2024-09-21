@@ -23,7 +23,7 @@ def salvar_no_postgres(dados:Vendas):
         cursor = conn.cursor()
         
         insert_query = sql.SQL(
-            "INSERT INTO vendas (email, data, valor, quantidade, produto) VALUES (%s, %s, %s, %s, %s~/Ondrive)"
+            "INSERT INTO vendas (email, data, valor, quantidade, produto) VALUES (%s, %s, %s, %s, %s)"
         )
         cursor.execute(insert_query, (
             dados.email,
