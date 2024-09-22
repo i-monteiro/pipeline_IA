@@ -5,7 +5,7 @@ from enum import Enum
 class ProdutoEnum(str, Enum):
     produto_1 = "Zapflow com Gemini"
     produto_2 = "Zapflow com ChatGPT"
-    produto_3 = "Zapflow com Llama3.0"
+    produto_3 = "Zapflow com Llama"
 
 class Vendas(BaseModel):
     """
