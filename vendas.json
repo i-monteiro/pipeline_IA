@@ -38,5 +38,37 @@
         "valor": 5000.0,
         "quantidade": 1,
         "produto": "Zapflow com Gemini"
+    },
+    {
+        "id": 6,
+        "email": "teste3@gmail.com",
+        "data": "2024-09-09T08:45:00",
+        "valor": 15000.0,
+        "quantidade": 2,
+        "produto": "Zapflow com ChatGPT"
+    },
+    {
+        "id": 7,
+        "email": "teste5@gmail.com",
+        "data": "2024-09-03T08:45:00",
+        "valor": 10.0,
+        "quantidade": 2,
+        "produto": "Zapflow com ChatGPT"
+    },
+    {
+        "id": 8,
+        "email": "teste6@hotmail.com",
+        "data": "2024-09-01T08:15:00",
+        "valor": 500.0,
+        "quantidade": 1,
+        "produto": "Zapflow com ChatGPT"
+    },
+    {
+        "id": 9,
+        "email": "teste7@hotmail.com",
+        "data": "2024-09-01T08:15:00",
+        "valor": 500.0,
+        "quantidade": 1,
+        "produto": "Zapflow com Llama"
     }
 ]
