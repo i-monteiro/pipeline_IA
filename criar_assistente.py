@@ -12,7 +12,7 @@ client = OpenAI(api_key=os.getenv("API_KEY"))
 # Função para criar o assistente com File Search habilitado
 def create_assistant_with_file_search():
     assistant = client.beta.assistants.create(
-        name="Meu assitente",
+        name="Meu assistente",
         instructions="Você é um especialista de dados, focado em dar respostas técnicas para o usuário. Como meu assistente, sua missão é ajudar ao máximo!",
         model="gpt-4o",
         tools=[{"type": "file_search"}],  # Habilitando o file_search
@@ -31,8 +31,8 @@ def upload_files_to_vector_store(vector_store, file_paths):
     file_streams = []
     for file_path in file_paths:
         try:
-            with open(file_path, "rb") as file:
-                file_streams.append(file)
+            file = open(file_path, "rb")
+            file_streams.append(file)
             print(f"Arquivo {file_path} preparado para upload.")
         except FileNotFoundError:
             print(f"Arquivo {file_path} não encontrado.")
@@ -43,6 +43,10 @@ def upload_files_to_vector_store(vector_store, file_paths):
         )
         print(f"Status do upload: {file_batch.status}")
         print(f"Contagem de arquivos: {file_batch.file_counts}")
+
+        # Fecha os arquivos após o upload
+        for file in file_streams:
+            file.close()
     else:
         print("Nenhum arquivo foi preparado para upload.")
 
