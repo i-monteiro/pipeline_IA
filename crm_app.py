@@ -6,7 +6,7 @@ from database import salvar_no_postgres
 
 def main():
     
-    st.title("Sistema de CRM e Vendas da Zapflow - Frontend Simples")
+    st.title("Sistema de CRM e Vendas")
     email = st.text_input("Campo de texto para inserção do e-mail")
     data = st.date_input("Data da Compra", datetime.now())
     hora = st.time_input("Hora da Compra", value=time(9, 0))  # Padrão: 09:00

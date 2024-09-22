@@ -5,7 +5,7 @@ from elevenlabs import ElevenLabs
 import os
 from dotenv import load_dotenv
 from datetime import datetime
-import re  # Importação adicional
+import re
 
 load_dotenv()
 
